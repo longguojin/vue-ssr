@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "ignore": ["dist/**/*", "node_modules/**/*"],
+  "execMap": { 
+    "js": "node"
+  },
+  "delay": "1000",
+  "ext": "js scss vue css html"
+}

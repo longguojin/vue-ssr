@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- use triple mustache for non-HTML-escaped interpolation -->
+
+  <!-- add meta tags -->
+  {{{ meta.inject().title.text() }}}
+  {{{ meta.inject().meta.text() }}}
+  {{{ meta.inject().link.text() }}}
+  {{{ meta.inject().style.text() }}}
+  {{{ meta.inject().script.text() }}}
+  {{{ meta.inject().noscript.text() }}}
+
+  <!-- preload or prefetch resource hints -->
+  {{{ renderResourceHints() }}}
+
+  <!-- insert styles -->
+  {{{ renderStyles() }}}
+</head>
+
+<body>
+  <!--vue-ssr-outlet-->
+
+  <!-- insert store state -->
+  {{{ renderState() }}}
+
+  <!-- insert script tags -->
+  {{{ renderScripts() }}}
+</body>
+
+</html>
