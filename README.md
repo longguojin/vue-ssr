@@ -34,7 +34,7 @@ for production
 
     npm run serve
 ```
-# Q: how add meta tags ?
+# Q: how to add meta tags ?
 
 ```js
   export default {
@@ -47,7 +47,7 @@ for production
 ```
 more usage , visit <a href="https://github.com/declandewet/vue-meta">vue-meta</a>
 
-# Q: how to use store and sync data ?
+# Q: how to use store and async data ?
 there are two rules to follow, first, the store's actions show return promise,
 second,the asynData function should return promise as well
 
